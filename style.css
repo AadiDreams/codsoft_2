@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0 auto;
+}
+body {
+    font-size: 12pt;
+    color:#000;
+    background-color:#161A30;
+}
+.header {
+    display: flex;
+    width:100%;
+    height:100dvh;
+}
+.left {
+    width:20%;
+    height:100dvh;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: #B6BBC4;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left:45%;
+    transform: translateY(-50%);
+    color:#F0ECE5;
+    width:400px;
+}
+.profile {
+    width:300px;
+    height:300px;
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    transform: translateY(-50%);
+    border: 2px solid #808080;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.profile img {
+    width:300px;
+    height:300px;
+}
+.nav {
+    display:flex;
+    position: fixed;
+    top:50%;
+    right:50px;
+    transform: translateY(-50%);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-button {
+    height:60px;
+    width:60px;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    background-color: #808080;
+}
+.active {
+    border:2px solid #fff;
+}
+.nav-button img {
+    height:30px;
+    width:30px;
+}
+.name {
+    color:#adff2f;
+}
+.resume {
+    width:150px;
+    padding:10px;
+    border:1px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.resume img {
+    height:20px;
+    width:20px;
+    padding-top: 5px;
+}
+.resume:hover {
+    border:1px solid #adff2f;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color:#adff2f
+}
+@media(max-width:900px) {
+    .nav {
+        flex-direction:row;
+        position: fixed;
+        height:80px;
+        width:100%;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: #161A30;
+        right:0px;
+        bottom: 0%;
+        top: auto;
+        transform: none;
+    }
+    .left {
+        background-color: #161A30;
+    }
+    .right {
+        top:45%;
+        left:50%;
+        width: auto;
+        transform: translateX(-50%);
+    }
+    .profile {
+        top: 20%;
+    }
+}
